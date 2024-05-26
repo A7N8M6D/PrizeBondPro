@@ -57,6 +57,7 @@
 flex-direction: column;
   justify-content: center;
   align-items: start;
+  /* padding-left: 100px; */
   }
   input {
     
@@ -64,9 +65,10 @@ flex-direction: column;
     height: 7vh;
     /* margin-bottom: 15px; */
     padding: 10px;
+    text-align: center;
     border: 3px solid #ccc;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 25px;
   }
   
   button {
@@ -91,4 +93,42 @@ flex-direction: column;
     margin-left: 20px;
   /* font-size: 10px; */
   }
+  .position-relative {
+    position: relative;
+  }
+
+  .position-relative {
+    position: relative;
+    /* pa:100px ; */
+    /* -left: 100px;  */
+    left: 20px;
+    top: 30px;
+  }
+  .icon{
+    font-size: 2rem;
+  }
+  /* Styles for the icon */
+  .position-absolute {
+    position: absolute;
+  }
   
+  .translate-middle-y {
+    transform: translateY(-50%);
+  }
+  
+  .top-50 {
+    top: 50%;
+  }
+  
+  .start-0 {
+    left: 0;
+  }
+  
+  /* Styles for the input */
+  .form-control {
+    /* Add any desired styles for the form control */
+  }
+  
+  .pl-4 {
+    padding-left: 1rem; /* Adjust padding-left as needed */
+  }
