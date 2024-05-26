@@ -1,0 +1,87 @@
+/* src/SignUp.css */
+
+.container {
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerMain
+{
+     height: 70vh;
+     border: 2px solid rgb(185, 185, 185);
+     border-radius: 5%;
+     background-color: #c7c7c76e;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    align-items: center;
+  }
+  .containerTitle
+  {
+    font-size: 2rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerForm{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  h2 {
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content:space-around;
+    /* align-items: center; */
+    width: 90%;
+    
+  }
+  .mb-3
+  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  input {
+    
+    width: 90%;
+    /* margin-bottom: 15px; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-danger {
+    color: red;
+    font-size: 14px;
+  }
+  
