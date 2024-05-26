@@ -1,12 +1,14 @@
 // src/SignUp.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
+import SignUpResponse from '../Response/Response.jsx'; 
 import * as Yup from 'yup';
 // import { useSpring,  } from 'react-spring';
 import axios from 'axios';
 import "./SignUp.css"
 const SignUp = () => {
+  const [responseMessage, setResponseMessage] = useState(null);
   const formProps = useFormik({
     initialValues: {
       fullname: '',
@@ -24,15 +26,22 @@ const SignUp = () => {
       password: Yup.string().required('Required'),
       userType: Yup.string().required('Required'),
       Location: Yup.string().required('Required'),
-      number: Yup.string().required('Required')
+      number: Yup.number().required('Must Be number')
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
         const response = await axios.post('https://prize-bond-backend.vercel.app/api/v1/users/register', values);
+        console.log( typeof response.data.statusCode)
+        if (response.data.statusCode === 200) {
+          // If registration is successful, set success message
+          setResponseMessage({ statusCode: response.statusCode, message: 'Successfully registered' });
+        }
         console.log(response.data); // Log the response from the server
         resetForm();
       } catch (error) {
         console.error('Error:', error.response.data); // Log error response
+        // If an error occurs, set error message
+        setResponseMessage({ statusCode: error.response.statusCode, message: 'Error: Please try again' });
       }
     }
   });
@@ -47,6 +56,7 @@ const SignUp = () => {
     </div>
     <div className='containerForm'>
       <form onSubmit={formProps.handleSubmit} className='form'>
+      {responseMessage && <SignUpResponse statusCode={responseMessage.statusCode} message={responseMessage.message} />}
         <div className="mb-3">
           <input
             type="text"
