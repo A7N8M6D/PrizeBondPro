@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import "./Navbar.css"; // Add your CSS styles here
-
+import { FaUserPlus } from 'react-icons/fa';
+import { FaSignInAlt } from "react-icons/fa";
+import { FaHome } from 'react-icons/fa';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const userType = Cookies.get("usertype");
@@ -22,7 +24,7 @@ const Navbar = () => {
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
           <Link to="/" onClick={() => setIsOpen(false)}>
-            Home
+          <FaHome />
           </Link>
         </li>
 
@@ -41,11 +43,10 @@ const Navbar = () => {
             </Link>
           </li>
         ) : (
-          <li>
-            <Link to="/signup" onClick={() => setIsOpen(false)}>
-              Sign Up
-            </Link>
-          </li>
+          <Link to="/signup" onClick={() => setIsOpen(false)}>
+          <FaSignInAlt /> {" "}
+            {/* Place the icon component before the text */}
+          </Link>
         )}
       </ul>
     </nav>
