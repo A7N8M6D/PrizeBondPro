@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import "./Navbar.css"; // Add your CSS styles here
-import { FaUserPlus } from 'react-icons/fa';
+// import { FaUserPlus } from 'react-icons/fa';
 import { FaSignInAlt } from "react-icons/fa";
 import { FaHome } from 'react-icons/fa';
 const Navbar = () => {
@@ -43,11 +43,12 @@ const Navbar = () => {
             </Link>
           </li>
         ) : (
-          <Link to="/signup" onClick={() => setIsOpen(false)}>
+          <Link to="/Register" onClick={() => setIsOpen(false)}>
           <FaSignInAlt /> {" "}
             {/* Place the icon component before the text */}
           </Link>
         )}
+        
       </ul>
     </nav>
   );

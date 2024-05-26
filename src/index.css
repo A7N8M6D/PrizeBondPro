@@ -9,3 +9,56 @@ body{
   margin: 0px;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: rgb(253, 177, 10);
+  --secondary-color: rgb(34, 150, 243);
+  --neutral-light: #FFFFFF;
+  --neutral-dark: #333333;
+  --neutral-muted: #F5F5F5;
+  --accent-color-1: rgb(10, 132, 253);
+  --accent-color-2: rgb(255, 87, 34);
+  /* Font Sizes */
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-large: 1.25rem; /* 20px */
+  --font-size-xlarge: 1.5rem; /* 24px */
+  --font-size-xxlarge: 2rem; /* 32px */
+
+  /* Font Families */
+  --font-family-sans: 'Arial', sans-serif;
+  --font-family-serif: 'Georgia', serif;
+  --font-family-mono: 'Courier New', monospace;
+}
+
+body {
+  background-color: var(--neutral-light);
+  color: var(--neutral-dark);
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: var(--neutral-light);
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+  color: var(--neutral-light);
+}
+
+button.accent {
+  background-color: var(--accent-color-1);
+  color: var(--neutral-light);
+}
+
+footer {
+  background-color: var(--neutral-muted);
+  color: var(--neutral-dark);
+}

@@ -65,10 +65,10 @@ const SignUp = () => {
   // const animatedProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
-    <div className="container">
+    
       <div className="containerMain">
         <div className="containerTitle">
-          <h2 className="text-center">Sign Up</h2>
+          <h2 className="text-center">Create Account</h2>
         </div>
         <div className="containerForm">
           <form onSubmit={formProps.handleSubmit} className="form">
@@ -78,10 +78,10 @@ const SignUp = () => {
                 message={responseMessage.message}
               />
             )}
-            <div className="mb-3 ">
-            <div className="icon position-relative">
+            <div className="mb-3 position-relative">
+            <div className="icon position-absolute ">
 
-              <AiOutlineUser className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <AiOutlineUser className=" " />{" "}
             </div>
               {/* React icon */}
               <input
@@ -93,15 +93,15 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Full Name"
               />
+            </div>
               {formProps.touched.fullname && formProps.errors.fullname ? (
                 <div className="text-danger">{formProps.errors.fullname}</div>
               ) : null}
-            </div>
-            <div className="mb-3 ">
+            <div className="mb-3 position-relative">
               {/* React icon */}
-              <div className="icon position-relative ">
+              <div className="icon position-absolute ">
 
-              <AiOutlineMail className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <AiOutlineMail className=" " />{" "}
               </div>
               <input
                 type="email"
@@ -112,14 +112,14 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Email"
               />
+            </div>
               {formProps.touched.email && formProps.errors.email ? (
                 <div className="text-danger">{formProps.errors.email}</div>
               ) : null}
-            </div>
-            <div className="mb-3 ">
-            <div className="icon position-relative ">
+            <div className="mb-3 position-relative">
+            <div className="icon position-absolute ">
 
-              <AiOutlineUser className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <AiOutlineUser className="" />{" "}
             </div>
               {/* React icon */}
               <input
@@ -131,15 +131,15 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Username"
               />
+            </div>
               {formProps.touched.username && formProps.errors.username ? (
                 <div className="text-danger">{formProps.errors.username}</div>
               ) : null}
-            </div>
 
-            <div className="mb-3 ">
-            <div className="icon position-relative ">
+            <div className="mb-3 position-relative">
+            <div className="icon position-absolute ">
 
-              <RiLockPasswordLine className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <RiLockPasswordLine className="" />{" "}
             </div>
               {/* React icon */}
               <input
@@ -151,15 +151,15 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Password"
               />
+            </div>
               {formProps.touched.password && formProps.errors.password ? (
                 <div className="text-danger">{formProps.errors.password}</div>
               ) : null}
-            </div>
 
-            <div className="mb-3">
-            <div className="icon position-relative ">
+            <div className="mb-3 position-relative">
+            <div className="icon  position-absolute">
 
-              <BsGeoAlt className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <BsGeoAlt className=" " />{" "}
             </div>
               {/* React icon */}
               <input
@@ -171,15 +171,15 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Location"
               />
+            </div>
               {formProps.touched.Location && formProps.errors.Location ? (
                 <div className="text-danger">{formProps.errors.Location}</div>
               ) : null}
-            </div>
 
-            <div className="mb-3 ">
-            <div className="icon position-relative ">
+            <div className="mb-3 position-relative">
+            <div className="icon position-absolute ">
 
-              <AiOutlinePhone className="position-absolute top-50 start-0 translate-middle-y" />{" "}
+              <AiOutlinePhone  />{" "}
             </div>
               {/* React icon */}
               <input
@@ -191,17 +191,17 @@ const SignUp = () => {
                 onBlur={formProps.handleBlur}
                 placeholder="Phone Number"
               />
+            </div>
               {formProps.touched.number && formProps.errors.number ? (
                 <div className="text-danger">{formProps.errors.number}</div>
               ) : null}
-            </div>
             <button type="submit" className="btn btn-primary">
               Sign Up
             </button>
           </form>
         </div>
       </div>
-    </div>
+    
   );
 };
 
