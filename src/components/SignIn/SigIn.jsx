@@ -1,35 +1,36 @@
-import React from "react";
-import "./Register.css";
+import React from 'react'
 import { Link } from "react-router-dom";
-import SignUp from "../SignUp/SignUp.js";
-const Register = () => {
+// import SignUp from "../SignUp/SignUp.js";
+import SignIn from './SignInResponse.jsx';
+import "./SignIn.css"
+const SigIn = () => {
   return (
     <div className="container">
+      <div className="RightContainer">
+        <div className="RightMain">
+          <SignIn/>
+        </div>
+      </div>
       <div className="LeftContiner">
         <div className="LeftMain">
           <div className="LeftMainText">
             <div className="LeftText">
               <h1>
-                <div>Welcome back to</div>
+                <div>Welcome to</div>
                 <div>Website</div>
               </h1>
             </div>
-            <div className="TextParagraph">Already Have an Account</div>
+            <div className="TextParagraph">New Here</div>
             <div className="TextButton">
               <button>
-                <Link to="/SignIn">Sign In</Link>
+                <Link to="/Register">Sign Up</Link>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="RightContainer">
-        <div className="RightMain">
-          <SignUp />
-        </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Register;
+export default SigIn

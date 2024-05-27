@@ -8,6 +8,7 @@ import Broker from './components/Pages/Broker/Broker.jsx'
 import SignUp from './components/SignUp/SignUp.js';
 import AddBondForm from './components/AddBond/AddBondForm.jsx';
 import Register from './components/SignUp/Register.jsx';
+import SigIn from './components/SignIn/SigIn.jsx';
 const App = () => {
     return (
         
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path="/signup" element={<SignUp />} /> {/* Add this line */}
                 <Route path="/add-bond" element={<AddBondForm />} />
                 <Route path="/Register" element={<Register />} />
+                <Route path="/SignIn" element={<SigIn/>} />
             </Routes>
         </Router>
         

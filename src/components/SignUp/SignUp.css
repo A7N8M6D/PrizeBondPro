@@ -25,7 +25,7 @@
   {
     font-size: var(--font-size-xxlarge);
     font-family: var(--font-family-san);
-    /* font-weight: bolder; */
+    font-weight: bolder;
     height: 10vh;
     display: flex;
     justify-content: center;
