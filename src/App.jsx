@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
@@ -22,7 +21,7 @@ const App = () => {
                             <Helmet>
                                 <title>Home - Prize Bond Search</title>
                                 <meta name="description" content="Search your prize bond numbers quickly and easily." />
-                                <meta name="keywords" content="prize bond, bond search, bond number" />
+                                <meta name="keywords" content="prize bond, bond search, bond number, prize bond search" />
                             </Helmet>
                             <Home />
                         </>
@@ -32,7 +31,7 @@ const App = () => {
                             <Helmet>
                                 <title>Bonds - Prize Bond Search</title>
                                 <meta name="description" content="Find details on various prize bonds." />
-                                <meta name="keywords" content="prize bonds, bond details" />
+                                <meta name="keywords" content="prize bonds, bond details, bond search" />
                             </Helmet>
                             <Bonds />
                         </>
@@ -42,7 +41,7 @@ const App = () => {
                             <Helmet>
                                 <title>Broker - Prize Bond Search</title>
                                 <meta name="description" content="Get in touch with prize bond brokers." />
-                                <meta name="keywords" content="prize bond brokers, bond broker contact" />
+                                <meta name="keywords" content="prize bond brokers, bond broker contact, find bond broker" />
                             </Helmet>
                             <Broker />
                         </>
@@ -52,7 +51,7 @@ const App = () => {
                             <Helmet>
                                 <title>Sign Up - Prize Bond Search</title>
                                 <meta name="description" content="Sign up to manage your prize bonds." />
-                                <meta name="keywords" content="sign up, prize bond account" />
+                                <meta name="keywords" content="sign up, prize bond account, manage prize bonds" />
                             </Helmet>
                             <SignUp />
                         </>
@@ -62,7 +61,7 @@ const App = () => {
                             <Helmet>
                                 <title>Add Bond - Prize Bond Search</title>
                                 <meta name="description" content="Add your prize bond details." />
-                                <meta name="keywords" content="add bond, prize bond details" />
+                                <meta name="keywords" content="add bond, prize bond details, enter bond details" />
                             </Helmet>
                             <AddBondForm />
                         </>
@@ -72,7 +71,7 @@ const App = () => {
                             <Helmet>
                                 <title>Register - Prize Bond Search</title>
                                 <meta name="description" content="Register to start searching prize bonds." />
-                                <meta name="keywords" content="register, prize bond registration" />
+                                <meta name="keywords" content="register, prize bond registration, start bond search" />
                             </Helmet>
                             <Register />
                         </>
@@ -82,7 +81,7 @@ const App = () => {
                             <Helmet>
                                 <title>Sign In - Prize Bond Search</title>
                                 <meta name="description" content="Sign in to access your prize bond account." />
-                                <meta name="keywords" content="sign in, prize bond account" />
+                                <meta name="keywords" content="sign in, prize bond account, access bond account" />
                             </Helmet>
                             <SigIn />
                         </>
