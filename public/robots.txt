@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /private/
 Allow: /
 
-Sitemap: https://prize-bond-pc8iqq4qd-a7n8m6ds-projects.vercel.app/sitemap.xml
+Sitemap: https://prize-bond-pro.vercel.app/sitemap.xml
 
