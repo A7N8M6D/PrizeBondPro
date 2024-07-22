@@ -9,9 +9,15 @@ import SignUp from './components/SignUp/SignUp.js';
 import AddBondForm from './components/AddBond/AddBondForm.jsx';
 import Register from './components/SignUp/Register.jsx';
 import SigIn from './components/SignIn/SigIn.jsx';
+import { Helmet } from 'react-helmet'; // Make sure this line is present
 const App = () => {
     return (
-        
+        <>
+        <Helmet>
+        <title>Prize Bond Search</title>
+        <meta name="description" content="Search your prize bond numbers quickly and easily." />
+        <meta name="keywords" content="prize bond, bond search, bond number" />
+      </Helmet>
        <Router>
             <Navbar />
             <Routes>
@@ -24,7 +30,7 @@ const App = () => {
                 <Route path="/SignIn" element={<SigIn/>} />
             </Routes>
         </Router>
-        
+        </>
     );
 };
 
