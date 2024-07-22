@@ -1,6 +1,6 @@
-// src/pages/AddBondForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 const AddBondForm = () => {
     const [formData, setFormData] = useState({
@@ -36,6 +36,20 @@ const AddBondForm = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Add Bond - Prize Bond Search</title>
+                <meta name="description" content="Add your prize bond details quickly and easily." />
+                <meta name="keywords" content="add prize bond, prize bond details, prize bond entry, prize bond form" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "name": "Add Prize Bond",
+                        "description": "Add your prize bond details quickly and easily.",
+                        "url": "http://www.yourwebsite.com/add-bond"
+                    })}
+                </script>
+            </Helmet>
             <h2>Add New Bond</h2>
             <form onSubmit={handleSubmit}>
                 <div>

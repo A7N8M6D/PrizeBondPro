@@ -1,5 +1,3 @@
-// src/SignUp.js
-
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import SignUpResponse from "../Response/Response.jsx";
@@ -10,6 +8,7 @@ import { AiOutlineMail, AiOutlineUser, AiOutlinePhone } from "react-icons/ai";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { BsGeoAlt } from "react-icons/bs";
 import InputField from "./../InputField/InputField.jsx";
+import { Helmet } from 'react-helmet';
 
 const SignUp = () => {
   const [responseMessage, setResponseMessage] = useState(null);
@@ -57,6 +56,20 @@ const SignUp = () => {
 
   return (
     <div className="containerMain">
+      <Helmet>
+        <title>Sign Up - Prize Bond Search</title>
+        <meta name="description" content="Sign up to manage your prize bonds and access your account." />
+        <meta name="keywords" content="sign up, prize bond account, create account, register for prize bond" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Sign Up",
+            "description": "Sign up to manage your prize bonds and access your account.",
+            "url": "http://www.yourwebsite.com/signup"
+          })}
+        </script>
+      </Helmet>
       <div className="containerTitle">
         <h2 className="text-center">Create Account</h2>
       </div>
