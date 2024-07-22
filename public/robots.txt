@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /private/
+Allow: /
+
+Sitemap: https://prize-bond-pc8iqq4qd-a7n8m6ds-projects.vercel.app/sitemap.xml
+
